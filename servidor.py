@@ -7,13 +7,20 @@ import json
 import enviroment
 import signal
 import sys
+import time
+import threading
 
 
 def log(mensagem: str):
     print("(SERVIDOR)", mensagem)
 
 
-LISTA_ACOES_DISPONIVEIS = ["LISTAR_ARQUIVOS", "ADICIONAR_ARQUIVO", "SAIR"]
+LISTA_ACOES_DISPONIVEIS = [
+    "LISTAR_ARQUIVOS",
+    "ADICIONAR_ARQUIVO",
+    "BAIXAR_ARQUIVO",
+    "SAIR",
+]
 
 
 class Mensagem(TypedDict):
@@ -29,6 +36,8 @@ def trata_mensagem(mensagem: Mensagem, socketParaCliente: socket.socket) -> str:
             return recupera_lista_arquivos()
         case "ADICIONAR_ARQUIVO":
             return adiciona_arquivo(socketParaCliente)
+        case "BAIXAR_ARQUIVO":
+            return envia_arquivo(socketParaCliente)
         case "SAIR":
             return "SAIR"
         case _:
@@ -41,11 +50,18 @@ def trata_mensagem(mensagem: Mensagem, socketParaCliente: socket.socket) -> str:
 
 def recupera_lista_arquivos():
     arquivos = os.listdir("armazenamento/")
-    return "\n".join(sorted(arquivos))
+    return "\n".join(arquivos)
 
 
-def recupera_arquivo_por_nome(nome):
-    pass
+def envia_arquivo(socketParaCliente: socket.socket):
+    arquivos = os.listdir("armazenamento/")
+    socketParaCliente.send(json.dumps(arquivos).encode("utf-8"))
+    nome_arquivo = socketParaCliente.recv(1024).decode("utf-8")
+    with open(f"armazenamento/{nome_arquivo}", "rb") as file:
+        while chunk := file.read(1024):
+            socketParaCliente.sendall(chunk)
+    time.sleep(0.1)
+    return "EOF"
 
 
 def trata_nome_arquivo(nome_arquivo, dup=0):
@@ -65,14 +81,11 @@ def adiciona_arquivo(socketParaCliente: socket.socket):
     nome_arquivo = trata_nome_arquivo(nome_arquivo)
     try:
         with open(f"armazenamento/{nome_arquivo}", "wb") as file:
-            counter = 0
             while True:
                 chunk = socketParaCliente.recv(1024)
                 if chunk == b"EOF":
                     return f"Arquivo {nome_arquivo} criado com sucesso!"
-                print("Escreveu no arquivo")
                 file.write(chunk)
-                counter += 1
     except Exception as e:
         return "Erro ao escrever no arquivo: " + e.__str__()
 
@@ -87,11 +100,11 @@ def handle_client(socketParaCliente):
         log("Mensagem recebida: " + str(msg))
         action_result = trata_mensagem(json.loads(msg), socketParaCliente)
         log("Ação finalizada com sucesso")
-        socketParaCliente.send(bytes(action_result, "utf-8"))
         if action_result == "SAIR":
             socketParaCliente.close()
             log("Conexão com cliente fechada")
             break
+        socketParaCliente.send(bytes(action_result, "utf-8"))
 
 
 # Servidor com sockets
@@ -113,16 +126,18 @@ signal.signal(signal.SIGINT, trata_signal)
 servidor = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 nome_servidor = socket.gethostname()
 ip_servidor = socket.gethostbyname_ex(nome_servidor)
-servidor.bind((enviroment.host, enviroment.port))
+port = 8081
+servidor.bind((ip_servidor[2][1], port))
 
-servidor.listen(1)
+servidor.listen(5)
 
-log("Em funcionamento!")
+log(f"Em funcionamento! {ip_servidor[2][1]}:{port}")
 while servidor_rodando:
     log("Aguardando conexão...")
     socketParaCliente, enderecoCliente = servidor.accept()
     log(f"Conectado ao cliente: {enderecoCliente}")
-    handle_client(socketParaCliente)
+    thread = threading.Thread(target=handle_client, args=[socketParaCliente])
+    thread.start()
 
 servidor.close()
 

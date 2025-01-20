@@ -11,14 +11,41 @@ def print_menu() -> None:
     print(f'{"MENU":=^30}')
     print("1. LISTAR ARQUIVOS")
     print("2. ADICIONAR ARQUIVO")
-    print("3. RECUPERAR ARQUIVO")
+    print("3. BAIXAR ARQUIVO")
     print("4. SAIR")
 
 
+def trata_nome_arquivo(nome_arquivo, dup=0):
+    nome = nome_arquivo
+    if dup > 0:
+        nome = f"({dup}) {nome_arquivo}"
+    if os.path.exists(f"local/{nome}"):
+        return trata_nome_arquivo(nome_arquivo, dup + 1)
+    return nome
+
+
+def recebe_arquivo_do_servidor(cliente: socket.socket, nome_arquivo_final: str):
+    with open(f"local/{nome_arquivo_final}", "wb") as file:
+        while True:
+            chunk = cliente.recv(1024)
+            print("Recebeu ", chunk)
+            if chunk == b"EOF":
+                print(f"Arquivo {nome_arquivo_final} baixado com sucesso!")
+                return
+            file.write(chunk)
+
+
 print("Conectando ao servidor...")
-cliente = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-cliente.connect((enviroment.host, enviroment.port))
-print("Conectado com sucesso!")
+try:
+    ip = str(input("Informe o IP do servidor: "))
+    port = int(input("Informe a porta do servidor: "))
+    cliente = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    cliente.connect((ip, port))
+    print("Conectado com sucesso!")
+except Exception as e:
+    print(e.__str__())
+    print("Falha ao conectar, encerrando programa")
+    quit()
 
 running = True
 while running:
@@ -41,7 +68,7 @@ while running:
                 cliente.send(b"\EOA")
                 mensagem_servidor = cliente.recv(1024).decode("utf-8")
                 print("Mensagem recebida: ", mensagem_servidor)
-                print("Arquivo não encontrado! Cancelando operação")
+                print("Arquivo não encontrado! Cancelando ação")
                 print()
                 continue
             nome_arquivo_salvar = nome_arquivo[nome_arquivo.rindex("/") + 1 :]
@@ -54,6 +81,35 @@ while running:
             cliente.send(b"EOF")
             mensagem_servidor = cliente.recv(1024).decode("utf-8")
             print("Mensagem recebida: " + mensagem_servidor)
+            print()
+        case 3:
+            print()
+            print(f'{"BAIXAR ARQUIVO":=^30}')
+            cliente.send(json.dumps({"acao": "BAIXAR_ARQUIVO"}).encode("utf-8"))
+            arquivos_disponiveis = json.loads(cliente.recv(1024).decode("utf-8"))
+            print(
+                "\n".join(
+                    [
+                        f"{index} - {value}"
+                        for index, value in enumerate(arquivos_disponiveis)
+                    ]
+                )
+            )
+            index_informado = int(input("Informe o código do arquivo desejado: "))
+            try:
+                nome_arquivo = arquivos_disponiveis[index_informado]
+            except:
+                print("Código inválido! Cancelando ação")
+                print()
+                continue
+            cliente.send(nome_arquivo.encode("utf-8"))
+            nome_arquivo_final = trata_nome_arquivo(nome_arquivo)
+            try:
+                recebe_arquivo_do_servidor(cliente, nome_arquivo_final)
+            except Exception as e:
+                print("Erro ao escrever no arquivo: " + e.__str__())
+                print()
+                continue
             print()
         case 4:
             running = False
