@@ -225,4 +225,3 @@ Linha 4: Simulando envio com mensagens variadas.
 Linha 5: Finalizando o teste de leitura.
 Linha 1: Teste de socket e envio.
 Linha 2: Verificando fragmentação.
-\EOF

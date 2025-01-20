@@ -4,6 +4,7 @@ import json
 import socket
 import enviroment
 import os
+import time
 
 
 def print_menu() -> None:
@@ -47,8 +48,10 @@ while running:
             cliente.send(bytes(nome_arquivo_salvar, "utf-8"))
             with open(nome_arquivo, "rb") as file:
                 while chunk := file.read(1024):
-                    cliente.send(chunk)
-            cliente.send(b"\EOF")
+                    cliente.sendall(chunk)
+
+            time.sleep(0.1)
+            cliente.send(b"EOF")
             mensagem_servidor = cliente.recv(1024).decode("utf-8")
             print("Mensagem recebida: " + mensagem_servidor)
             print()

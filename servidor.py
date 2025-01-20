@@ -68,10 +68,8 @@ def adiciona_arquivo(socketParaCliente: socket.socket):
             counter = 0
             while True:
                 chunk = socketParaCliente.recv(1024)
-                log(f"Recebeu: {counter} - {chunk}")
-                if chunk == b"\EOF":
-                    log("Chegou ao fim do arquivo: " + chunk.decode(1024))
-                    return "Arquivo {nome_arquivo} criado com sucesso!"
+                if chunk == b"EOF":
+                    return f"Arquivo {nome_arquivo} criado com sucesso!"
                 print("Escreveu no arquivo")
                 file.write(chunk)
                 counter += 1
@@ -84,11 +82,15 @@ def adiciona_arquivo(socketParaCliente: socket.socket):
 
 def handle_client(socketParaCliente):
     while True:
+        log("Aguardando ação do cliente...")
         msg = socketParaCliente.recv(1024).decode("utf-8")
         log("Mensagem recebida: " + str(msg))
         action_result = trata_mensagem(json.loads(msg), socketParaCliente)
+        log("Ação finalizada com sucesso")
         socketParaCliente.send(bytes(action_result, "utf-8"))
         if action_result == "SAIR":
+            socketParaCliente.close()
+            log("Conexão com cliente fechada")
             break
 
 
@@ -121,7 +123,6 @@ while servidor_rodando:
     socketParaCliente, enderecoCliente = servidor.accept()
     log(f"Conectado ao cliente: {enderecoCliente}")
     handle_client(socketParaCliente)
-    socketParaCliente.close()
 
 servidor.close()
 
