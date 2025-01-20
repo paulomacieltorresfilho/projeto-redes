@@ -1,0 +1,228 @@
+Linha 1: Teste de socket e envAio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+Linha 3: Pequenos blocos de dados são mais fáceis de analisar.
+Linha 4: Simulando envio com mensagens variadas.
+Linha 5: Finalizando o teste de leitura.
+Linha 1: Teste de socket e envio.
+Linha 2: Verificando fragmentação.
+\EOF
